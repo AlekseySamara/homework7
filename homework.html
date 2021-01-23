@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="homework.js"></script>
+    <link rel="stylesheet" href="homework.css">
+</head>
+<body>
+    <form action="X" method="GET" enctype="multipart/form-data"></form>
+    <label>
+        <h1>checkbox</h1>
+        <input type="checkbox" name="empty" value="yes">
+        checkbox
+    </label>
+    <label>
+        <input type="checkbox" name="checked" value="yes" checked>
+        checkbox checked
+    </label>
+    <label>
+        <input type="checkbox" name="disabled" value="yes" disabled>
+        checkbox disabled
+    </label>
+    <label>
+        <input type="checkbox" name="checkedDisabled" value="yes" checked disabled>
+        checkbox checked disabled
+    </label>
+    <!--checkbox применяются в форме для выбора нескольких значений.
+    в атрибуте name указывается уникальное имя элемента для дальнешей отправки на сервер.
+    в атрибуте value указываем значение элемента. 
+    Если указываем атрибут cheсked - автоматически выбирается элемент (устанавливается флажок, галочка)
+    Если устанавливаем атрибут disabled -  элемент будет скрыт (нельзя будет выбрать)
+    Если устанавливаем disabled, checked - элемент будет выбран и скрыт одновременно-->
+    <h2>radiobutton</h2>
+    <label>
+        <input type="radio" name="country" value="Belarus">
+        Belarus
+    </label>
+    <label>
+        <input type="radio" name="country" value="Russia">
+        Russia
+    </label>
+    <label>
+        <input type="radio" name="country" value="Ukraine" checked>
+        Ukraine
+    </label>
+    <label>
+        <input type="radio" name="country" value="Poland">
+        Poland
+    </label>
+    <label>
+        <input type="radio" name="country" value="Lithuania">
+        Lithuania
+    </label>
+    <!--radiobutton позволяет выбрать только одно значение. 
+    для того, чтобы radiobutton работал следует указать одинаковое значение name. 
+    Атрибуты disabled, checked можем также добавлять-->
+    
+</body>
+</html>
